@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Calculator</title>
+</head>
+
+<body>
+    <div class="calculator-wrapper">
+        <div class="calculator-input">
+            <input class="calculator-data-input" value="" placeholder="">
+        </div>
+        <div class="container calculator-num-panel">
+            <div class="row">
+                <div class="col-xs-3 input-tile"><button value="AC" onclick="clearAll(event)">AC</button></div>
+                <div class="col-xs-3 input-tile"><button value="Del" onclick="deleteLastInput(event)">Del</button></div>
+                <div class="col-xs-3 input-tile"><button value="%" onclick="inputEntered(event)">%</button></div>
+                <div class="col-xs-3 input-tile"><button value="/" onclick="inputEntered(event)">/</button></div>
+            </div>
+            <div class="row">
+                <div class="col-xs-3 input-tile"><button value="7" onclick="inputEntered(event)">7</button></div>
+                <div class="col-xs-3 input-tile"><button value="8" onclick="inputEntered(event)">8</button></div>
+                <div class="col-xs-3 input-tile"><button value="9" onclick="inputEntered(event)">9</button></div>
+                <div class="col-xs-3 input-tile"><button value="*" onclick="inputEntered(event)">*</button></div>
+            </div>
+            <div class="row">
+                <div class="col-xs-3 input-tile"><button value="4" onclick="inputEntered(event)">4</button></div>
+                <div class="col-xs-3 input-tile"><button value="5" onclick="inputEntered(event)">5</button></div>
+                <div class="col-xs-3 input-tile"><button value="6" onclick="inputEntered(event)">6</button></div>
+                <div class="col-xs-3 input-tile"><button value="-" onclick="inputEntered(event)">-</button></div>
+            </div>
+            <div class="row">
+                <div class="col-xs-3 input-tile"><button value="1" onclick="inputEntered(event)">1</button></div>
+                <div class="col-xs-3 input-tile"><button value="2" onclick="inputEntered(event)">2</button></div>
+                <div class="col-xs-3 input-tile"><button value="3" onclick="inputEntered(event)">3</button></div>
+                <div class="col-xs-3 input-tile"><button value="+" onclick="inputEntered(event)">+</button></div>
+            </div>
+            <div class="row">
+                <div class="col-xs-3 input-tile"><button value="^" onclick="inputEntered(event)">^</button></div>
+                <div class="col-xs-3 input-tile"><button value="0" onclick="inputEntered(event)">0</button></div>
+                <div class="col-xs-3 input-tile"><button value="." onclick="inputEntered(event)">.</button></div>
+                <div class="col-xs-3 input-tile"><button value="=" onclick="evaluteResult(event)">=</button></div>
+            </div>
+        </div>
+
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
