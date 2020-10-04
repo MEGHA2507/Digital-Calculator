@@ -1,8 +1,10 @@
 function inputEntered(event) {
     let inputValue = document.querySelector('.calculator-data-input').value;
+    console.log(inputValue);
     let enteredValue = event.target.value;
     let calcValue = inputValue.concat(enteredValue);
     document.querySelector('.calculator-data-input').value = calcValue;
+
 }
 
 function clearAll(event) {
@@ -30,10 +32,12 @@ function evaluteResult(event) {
 
     } else {
         evalResult = eval(deleteOutput);
-        console.log(evalResult);
     }
 
     let evalResultDisplay = inputValue.concat(evalResult);
     document.querySelector('.calculator-data-input').value = evalResultDisplay;
-
 }
+
+// function operatorOccurance(){
+
+// }

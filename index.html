@@ -10,13 +10,14 @@
 
 <body>
     <div class="calculator-wrapper">
+        <h1>Digi Calculator</h1>
         <div class="calculator-input">
             <input class="calculator-data-input" value="" placeholder="">
         </div>
         <div class="container calculator-num-panel">
             <div class="row">
-                <div class="col-xs-3 input-tile"><button value="AC" onclick="clearAll(event)">AC</button></div>
-                <div class="col-xs-3 input-tile"><button value="Del" onclick="deleteLastInput(event)">Del</button></div>
+                <div class="col-xs-3 input-tile"><button value="AC" class="btn-clear" onclick="clearAll(event)">AC</button></div>
+                <div class="col-xs-3 input-tile"><button value="Del" class="btn-delete" onclick="deleteLastInput(event)">Del</button></div>
                 <div class="col-xs-3 input-tile"><button value="%" onclick="inputEntered(event)">%</button></div>
                 <div class="col-xs-3 input-tile"><button value="/" onclick="inputEntered(event)">/</button></div>
             </div>
@@ -42,7 +43,7 @@
                 <div class="col-xs-3 input-tile"><button value="^" onclick="inputEntered(event)">^</button></div>
                 <div class="col-xs-3 input-tile"><button value="0" onclick="inputEntered(event)">0</button></div>
                 <div class="col-xs-3 input-tile"><button value="." onclick="inputEntered(event)">.</button></div>
-                <div class="col-xs-3 input-tile"><button value="=" onclick="evaluteResult(event)">=</button></div>
+                <div class="col-xs-3 input-tile"><button value="=" class="btn-equals" onclick="evaluteResult(event)">=</button></div>
             </div>
         </div>
 
