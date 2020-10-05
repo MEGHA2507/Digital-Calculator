@@ -75,3 +75,9 @@ body .calculator-wrapper .calculator-num-panel .input-tile .btn-equals {
   background: darkorange;
   color: black;
 }
+@media (min-width: 768px) {
+  .calculator-wrapper {
+    width: 40%;
+    margin: 0 auto;
+  }
+}
