@@ -19,10 +19,19 @@ function inputEntered(event) {
     // null value of input and 1st char shouldnot be operator validations
     if (inputValue == '' && isNaN(enteredValue)) {
         return false;
+    } else {
+        if (isNaN(enteredValue)) {
+            let lastindexValue = inputValue.slice(-1);
+            console.log(lastindexValue);
+            if (enteredValue == lastindexValue || isNaN(lastindexValue)) {
+                return false;
+            }
+        }
     }
 
     let calcValue = inputValue.concat(enteredValue);
     document.querySelector('.calculator-data-input').value = calcValue;
+
 }
 
 
