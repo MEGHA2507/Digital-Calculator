@@ -63,6 +63,11 @@ body .calculator-wrapper .calculator-num-panel .input-tile button:active {
   background-color: #33cc33;
   color: #000000;
 }
+body .calculator-wrapper .calculator-num-panel .input-tile button:focus {
+  outline: 0;
+  border: 2px solid #054d03;
+  border-radius: 10px;
+}
 body .calculator-wrapper .calculator-num-panel .input-tile .btn-clear {
   background: dodgerblue;
   color: black;

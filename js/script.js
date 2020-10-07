@@ -31,7 +31,6 @@ function inputEntered(event) {
 
     let calcValue = inputValue.concat(enteredValue);
     document.querySelector('.calculator-data-input').value = calcValue;
-
 }
 
 
